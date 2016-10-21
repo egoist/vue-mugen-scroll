@@ -6,7 +6,7 @@
         <h2>{{ user.login }}</h2>
       </div>
     </div>
-    <mugen-scroll :handler="fetchUsers" :shouldHandle="!loading">
+    <mugen-scroll :handler="fetchUsers" :should-handle="!loading">
       loading...
     </mugen-scroll>
     <div class="count">loaded {{ count }} time{{ count > 1 ? 's' : '' }}</div>

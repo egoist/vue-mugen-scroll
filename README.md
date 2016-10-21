@@ -20,7 +20,7 @@ $ npm install --save vue-mugen-scroll
   <div id="app">
     <div class="list">you list of items</div>
     <!-- add the component right after your list -->
-    <mugen-scroll :handler="fetchData" :shouldHandle="!loading">
+    <mugen-scroll :handler="fetchData" :should-handle="!loading">
       loading...
     </mugen-scroll>
   </div>
