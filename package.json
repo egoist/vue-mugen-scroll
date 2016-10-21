@@ -1,0 +1,52 @@
+{
+  "name": "vue-mugen-scroll",
+  "version": "0.0.0",
+  "description": "Infinite scroll component for Vue.js",
+  "license": "MIT",
+  "repository": "egoist/vue-mugen-scroll",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "eslint src/*.js",
+    "example": "vbuild --dev --config vue.config.example.js",
+    "example:build": "vbuild --config vue.config.example.js",
+    "gh": "npm run example:build && gh-pages -d dist-example",
+    "build": "bili --format umd --format cjs --module-name MugenScroll --compress"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/vue-mugen-scroll.common.js",
+  "keywords": [
+    "vue",
+    "infinite scroll",
+    "scroll",
+    "infinite",
+    "ui",
+    "component"
+  ],
+  "devDependencies": {
+    "axios": "^0.15.2",
+    "bili": "^0.6.3",
+    "eslint": "latest",
+    "eslint-config-egoist": "latest",
+    "gh-pages": "^0.11.0",
+    "jest-cli": "^15.1.1",
+    "vue": "^2.0.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "extends": "egoist/esnext-browser"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1"
+  }
+}
