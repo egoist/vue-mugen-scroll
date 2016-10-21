@@ -20,14 +20,14 @@ const MugenScroll = {
   },
   methods: {
     checkInView() {
-      const check = throttle(() => {
+      this.check = throttle(() => {
         const inView = inViewport(this.$refs.scroll)
         if (this.shouldHandle && inView) {
           this.handler()
         }
       }, 100)
 
-      triggers.forEach(event => window.addEventListener(event, check))
+      triggers.forEach(event => window.addEventListener(event, this.check))
     }
   },
   render(h) {
@@ -35,6 +35,9 @@ const MugenScroll = {
       staticClass: 'mugen-scroll',
       ref: 'scroll'
     }, this.$slots.default)
+  },
+  beforeDestory() {
+    triggers.forEach(event => window.removeEventListener(event, this.check))
   }
 }
 
