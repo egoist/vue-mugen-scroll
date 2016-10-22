@@ -25,7 +25,9 @@ const MugenScroll = {
   methods: {
     checkInView() {
       this.check = throttle(() => {
-        const inView = inViewport(this.$refs.scroll, this.threshold)
+        const inView = inViewport(this.$refs.scroll, {
+          threshold: this.threshold
+        })
         if (this.shouldHandle && inView) {
           this.handler()
         }

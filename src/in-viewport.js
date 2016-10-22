@@ -5,7 +5,7 @@
 */
 export default (element, {
   offset = {},
-  threshold = 0
+  threshold
 } = {}) => {
   const {top, right, bottom, left, width, height} = element.getBoundingClientRect()
 
