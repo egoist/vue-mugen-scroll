@@ -16,7 +16,7 @@ const MugenScroll = {
     }
   },
   mounted() {
-    this.checkInView(this.$refs.scroll, this.handler, this.shouldHandle)
+    this.checkInView()
   },
   methods: {
     checkInView() {
