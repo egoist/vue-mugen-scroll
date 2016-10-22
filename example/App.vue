@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <github></github>
+    <h1>vue-mugen-scroll</h1>
+    <h2>Infinite scroll component for Vue.js</h2>
     <div class="users" v-if="users.length > 0">
       <div class="user" v-for="user in users">
         <img class="avatar" :src="user.avatar_url" height="40" alt="">
@@ -7,7 +10,7 @@
       </div>
     </div>
     <mugen-scroll :handler="fetchUsers" :should-handle="!loading">
-      loading...
+      loading <span class="loading dots"></span>
     </mugen-scroll>
     <div class="count">loaded {{ count }} time{{ count > 1 ? 's' : '' }}</div>
   </div>
@@ -17,6 +20,7 @@
   import http from 'axios'
 
   import MugenScroll from '../src'
+  import Github from './Github.vue'
 
   export default {
     name: 'app',
@@ -39,14 +43,26 @@
       }
     },
     components: {
-      MugenScroll
+      MugenScroll,
+      Github
     }
   }
 </script>
 
+<style src="text-spinners/spinners.css"></style>
 <style>
   body {
     margin: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               Ubuntu,
+               'segoe ui', arial,
+               sans-serif;
+    * {
+      font-weight: 300;
+    }
   }
   .users {
     max-width: 400px;
@@ -64,7 +80,6 @@
   }
   .mugen-scroll {
     padding: 10px;
-    text-align: center;
     font-size: 18px;
   }
   .count {

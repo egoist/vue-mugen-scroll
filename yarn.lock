@@ -2896,6 +2896,10 @@ testcheck@^0.1.0:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/testcheck/-/testcheck-0.1.4.tgz#90056edd48d11997702616ce6716f197d8190164"
 
+text-spinners:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/text-spinners/-/text-spinners-1.0.1.tgz#88e617850583fe31091f57fb03aae1120dec3284"
+
 text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
