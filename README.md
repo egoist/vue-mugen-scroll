@@ -1,6 +1,6 @@
-# vue-mugen-scroll
+# vue-mugen-scroll [![NPM version](https://img.shields.io/npm/v/vue-mugen-scroll.svg?style=flat-square)](https://npmjs.com/package/vue-mugen-scroll) [![NPM downloads](https://img.shields.io/npm/dm/vue-mugen-scroll.svg?style=flat-square)](https://npmjs.com/package/vue-mugen-scroll) [![Build Status](https://img.shields.io/circleci/project/egoist/vue-mugen-scroll/master.svg?style=flat-square)](https://circleci.com/gh/egoist/vue-mugen-scroll)
 
-[![NPM version](https://img.shields.io/npm/v/vue-mugen-scroll.svg?style=flat-square)](https://npmjs.com/package/vue-mugen-scroll) [![NPM downloads](https://img.shields.io/npm/dm/vue-mugen-scroll.svg?style=flat-square)](https://npmjs.com/package/vue-mugen-scroll) [![Build Status](https://img.shields.io/circleci/project/egoist/vue-mugen-scroll/master.svg?style=flat-square)](https://circleci.com/gh/egoist/vue-mugen-scroll)
+**むげん [mugen]** means Infinity in English.
 
 ## Features
 
