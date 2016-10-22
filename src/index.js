@@ -13,6 +13,10 @@ const MugenScroll = {
     shouldHandle: {
       type: Boolean,
       default: true
+    },
+    threshold: {
+      type: Number,
+      default: 0
     }
   },
   mounted() {
@@ -21,11 +25,11 @@ const MugenScroll = {
   methods: {
     checkInView() {
       this.check = throttle(() => {
-        const inView = inViewport(this.$refs.scroll)
+        const inView = inViewport(this.$refs.scroll, this.threshold)
         if (this.shouldHandle && inView) {
           this.handler()
         }
-      }, 100)
+      }, 200)
 
       triggers.forEach(event => window.addEventListener(event, this.check))
     }

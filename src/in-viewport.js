@@ -4,7 +4,8 @@
 * more than offset px.
 */
 export default (element, {
-  offset = {}
+  offset = {},
+  threshold = 0
 } = {}) => {
   const {top, right, bottom, left} = element.getBoundingClientRect()
 
@@ -15,8 +16,13 @@ export default (element, {
     l: right
   }
 
-  return intersection.t >= (offset.top || 0) &&
-    intersection.r >= (offset.right || 0) &&
-    intersection.b >= (offset.bottom || 0) &&
-    intersection.l >= (offset.left || 0)
+  const elementThreshold = {
+    x: threshold * width,
+    y: threshold * height
+  }
+
+  return intersection.t >= (offset.top || 0 + elementThreshold.y) &&
+    intersection.r >= (offset.right || 0 + elementThreshold.x) &&
+    intersection.b >= (offset.bottom || 0 + elementThreshold.y) &&
+    intersection.l >= (offset.left || 0 + elementThreshold.x)
 }
