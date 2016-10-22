@@ -7,7 +7,7 @@ export default (element, {
   offset = {},
   threshold = 0
 } = {}) => {
-  const {top, right, bottom, left} = element.getBoundingClientRect()
+  const {top, right, bottom, left, width, height} = element.getBoundingClientRect()
 
   const intersection = {
     t: bottom,
