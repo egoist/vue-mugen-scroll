@@ -42,7 +42,7 @@ const MugenScroll = {
       ref: 'scroll'
     }, this.$slots.default)
   },
-  beforeDestory() {
+  beforeDestroy() {
     triggers.forEach(event => window.removeEventListener(event, this.check))
   }
 }
