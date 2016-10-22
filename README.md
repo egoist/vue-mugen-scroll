@@ -54,7 +54,7 @@ $ npm install --save vue-mugen-scroll
 Type: `function`<br>
 Required: `true`
 
-The handler function to run after you scroll to the bottom of the list. It will also be invoked on page loaded and the `mugen-scroll` component is visible in viewport.
+The handler function to run after you scroll to the bottom of the list. It will also be invoked on component mounted and the `mugen-scroll` component is visible in viewport.
 
 #### shouldHandle
 

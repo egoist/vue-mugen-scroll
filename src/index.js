@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle'
 import inViewport from './in-viewport'
 
-const triggers = ['scroll', 'resize', 'load']
+const triggers = ['scroll', 'resize']
 
 const MugenScroll = {
   name: 'mugen-scroll',
@@ -24,15 +24,20 @@ const MugenScroll = {
   },
   methods: {
     checkInView() {
-      this.check = throttle(() => {
+      const execute = () => {
         const inView = inViewport(this.$refs.scroll, {
           threshold: this.threshold
         })
         if (this.shouldHandle && inView) {
           this.handler()
         }
-      }, 200)
+      }
 
+      // checkInView right after this component is mounted
+      execute()
+
+      // add event listeners
+      this.check = throttle(execute, 200)
       triggers.forEach(event => window.addEventListener(event, this.check))
     }
   },
