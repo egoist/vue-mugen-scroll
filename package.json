@@ -1,6 +1,6 @@
 {
   "name": "vue-mugen-scroll",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Infinite scroll component for Vue.js",
   "license": "MIT",
   "repository": "egoist/vue-mugen-scroll",
