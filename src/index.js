@@ -17,6 +17,10 @@ const MugenScroll = {
     threshold: {
       type: Number,
       default: 0
+    },
+    handleOnMount: {
+      type: Boolean,
+      default: true
     }
   },
   mounted() {
@@ -34,7 +38,7 @@ const MugenScroll = {
       }
 
       // checkInView right after this component is mounted
-      execute()
+      if (this.handleOnMount) execute()
 
       // add event listeners
       this.check = throttle(execute, 200)

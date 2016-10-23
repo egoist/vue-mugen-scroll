@@ -56,6 +56,13 @@ Required: `true`
 
 The handler function to run after you scroll to the bottom of the list. It will also be invoked on component mounted and the `mugen-scroll` component is visible in viewport.
 
+#### handleOnMount
+
+Type: `boolean`<br>
+Default: `true`
+
+Invoke the handler function on component mounted.
+
 #### shouldHandle
 
 Type: `boolean`<br>
