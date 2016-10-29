@@ -77,6 +77,29 @@ Default: `0`
 
 Set the ratio of the `<mugen-scroll>`'s height and width that needs to be visible for it to be considered in viewport. This defaults to 0, meaning any amount. A threshold of 0.5 or 1 will require that half or all, respectively, of the element's height and width need to be visible. threshold must be a number between 0 and 1
 
+#### scrollConatiner
+
+Type: `string`
+
+If the container of your list is scrollable, you can specific the reference ID of the container, so that we can detect the `scroll` event of this element instead of `window`.
+
+```vue
+<template>
+  <div class="wrap"
+    <!-- the container is scrollable here -->
+    style="height: 200px; overflow: auto;"
+    <!-- add the ref -->
+    ref="wrap">
+    <div class="list"><!-- your list --></div>
+    <mugen-scroll
+      <!-- pass the ref id -->
+      scroll-container="wrap">
+      Loading...
+    </mugen-scroll>
+  </div>
+</template>
+```
+
 ## Contributing
 
 1. Fork it!

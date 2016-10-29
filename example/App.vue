@@ -3,15 +3,21 @@
     <github></github>
     <h1>vue-mugen-scroll</h1>
     <h2>Infinite scroll component for Vue.js</h2>
-    <div class="users" v-if="users.length > 0">
-      <div class="user" v-for="user in users">
-        <img class="avatar" :src="user.avatar_url" height="40" alt="">
-        <h2>{{ user.login }}</h2>
+    <div class="wrap" ref="scrollContainer">
+      <div class="users" v-if="users.length > 0">
+        <div class="user" v-for="user in users">
+          <img class="avatar" :src="user.avatar_url" height="40" alt="">
+          <h2>{{ user.login }}</h2>
+        </div>
       </div>
+      <mugen-scroll
+        :handler="fetchUsers"
+        :should-handle="!loading"
+        scroll-container="scrollContainer">
+        loading <span class="loading dots"></span>
+      </mugen-scroll>
     </div>
-    <mugen-scroll :handler="fetchUsers" :should-handle="!loading">
-      loading <span class="loading dots"></span>
-    </mugen-scroll>
+
     <div class="count">loaded {{ count }} time{{ count > 1 ? 's' : '' }}</div>
   </div>
 </template>
@@ -65,8 +71,6 @@
     }
   }
   .users {
-    max-width: 400px;
-    margin: 0 auto;
     background-color: #f0f0f0;
     .user {
       display: flex;
@@ -87,5 +91,11 @@
     bottom: 10px;
     right: 10px;
     font-size: 18px;
+  }
+  .wrap {
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    overflow-y: auto;
   }
 </style>
