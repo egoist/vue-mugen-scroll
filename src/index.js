@@ -43,13 +43,13 @@ const MugenScroll = {
       // checkInView right after this component is mounted
       if (this.handleOnMount) execute()
 
-      this._scrollConatiner = this.scrollContainer ?
+      this._scrollContainer = this.scrollContainer ?
         this.$parent.$refs[this.scrollContainer] :
         window
 
       // add event listeners
       this.check = throttle(execute, 200)
-      triggers.forEach(event => this._scrollConatiner.addEventListener(event, this.check))
+      triggers.forEach(event => this._scrollContainer.addEventListener(event, this.check))
     }
   },
   render(h) {
