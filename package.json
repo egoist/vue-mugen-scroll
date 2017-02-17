@@ -14,8 +14,8 @@
   },
   "scripts": {
     "test": "eslint src/*.js",
-    "example": "vbuild --dev --config vue.config.example.js",
-    "example:build": "vbuild --config vue.config.example.js",
+    "example": "vbuild -dc",
+    "example:build": "vbuild -c",
     "gh": "npm run example:build && gh-pages -d dist-example",
     "build": "bili --format umd --format cjs --module-name MugenScroll --compress"
   },
@@ -38,8 +38,7 @@
     "eslint-config-egoist": "latest",
     "gh-pages": "^0.11.0",
     "jest-cli": "^15.1.1",
-    "text-spinners": "^1.0.1",
-    "vue": "^2.0.3"
+    "text-spinners": "^1.0.1"
   },
   "jest": {
     "testEnvironment": "node"
