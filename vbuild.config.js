@@ -5,9 +5,5 @@ module.exports = {
   html: {
     title: 'Vue MugenScroll'
   },
-  webpack: {
-    output: {
-      publicPath: '/vue-mugen-scroll/'
-    }
-  }
+  homepage: '/vue-mugen-scroll/'
 }
