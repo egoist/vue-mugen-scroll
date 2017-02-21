@@ -41,7 +41,9 @@ const MugenScroll = {
       }
 
       // checkInView right after this component is mounted
-      if (this.handleOnMount) execute()
+      if (this.handleOnMount) {
+        execute()
+      }
 
       this._scrollContainer = this.scrollContainer ?
         this.$parent.$refs[this.scrollContainer] :

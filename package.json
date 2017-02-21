@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "eslint src/*.js",
+    "test": "xo src/*.js",
     "example": "vbuild -dc",
     "example:build": "vbuild -c",
     "gh": "npm run example:build && gh-pages -d dist-example",
@@ -38,7 +38,14 @@
     "jest-cli": "^15.1.1",
     "postcss-nested": "^1.0.0",
     "text-spinners": "^1.0.1",
-    "vbuild": "^6.15.0"
+    "vbuild": "^6.15.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": false,
+    "esnext": true,
+    "envs": ["browser"]
   },
   "jest": {
     "testEnvironment": "node"
