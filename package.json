@@ -34,8 +34,6 @@
   "devDependencies": {
     "axios": "^0.15.2",
     "bili": "^0.6.3",
-    "eslint": "latest",
-    "eslint-config-egoist": "latest",
     "gh-pages": "^0.11.0",
     "jest-cli": "^15.1.1",
     "text-spinners": "^1.0.1",
