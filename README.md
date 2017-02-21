@@ -102,6 +102,17 @@ If the container of your list is scrollable, you can specific the reference ID o
 </template>
 ```
 
+## Development
+
+You can run the example with [vbuild](https://github.com/egoist/vbuild)
+
+```bash
+git clone https://github.com/egoist/vue-mugen-scroll.git
+cd vue-mugen-scroll
+yarn
+yarn example
+```
+
 ## Contributing
 
 1. Fork it!
