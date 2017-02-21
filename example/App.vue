@@ -66,9 +66,6 @@
                Ubuntu,
                'segoe ui', arial,
                sans-serif;
-    * {
-      font-weight: 300;
-    }
   }
   .users {
     background-color: #f0f0f0;
@@ -85,6 +82,7 @@
   .mugen-scroll {
     padding: 10px;
     font-size: 18px;
+    background-color: #f0f0f0;
   }
   .count {
     position: fixed;

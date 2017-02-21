@@ -5,5 +5,8 @@ module.exports = {
   html: {
     title: 'Vue MugenScroll'
   },
-  homepage: '/vue-mugen-scroll/'
+  homepage: '/vue-mugen-scroll/',
+  postcss:[
+    require('postcss-nested')
+  ]
 }

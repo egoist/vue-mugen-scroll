@@ -36,6 +36,7 @@
     "bili": "^0.6.3",
     "gh-pages": "^0.11.0",
     "jest-cli": "^15.1.1",
+    "postcss-nested": "^1.0.0",
     "text-spinners": "^1.0.1",
     "vbuild": "^6.15.0"
   },
