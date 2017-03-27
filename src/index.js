@@ -66,7 +66,7 @@ const MugenScroll = {
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
-  Vue.component(MugenScroll.name, MugenScroll)
+  window.Vue.component(MugenScroll.name, MugenScroll)
 }
 
 export default MugenScroll
