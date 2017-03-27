@@ -4180,10 +4180,6 @@ lodash.snakecase@^4.0.1:
   version "4.1.1"
   resolved "https://registry.npmjs.org/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
 
-lodash.throttle:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
-
 lodash.uniq@^4.3.0:
   version "4.5.0"
   resolved "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -6237,6 +6233,10 @@ text-table@^0.2.0, text-table@~0.2.0:
 the-argv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/the-argv/-/the-argv-1.0.0.tgz#0084705005730dd84db755253c931ae398db9522"
+
+throttleit@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/throttleit/-/throttleit-1.0.0.tgz#9e785836daf46743145a5984b6268d828528ac6c"
 
 through@^2.3.6:
   version "2.3.8"

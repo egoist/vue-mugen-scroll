@@ -1,4 +1,4 @@
-import throttle from 'lodash.throttle'
+import throttle from 'throttleit'
 import inViewport from './in-viewport'
 
 const triggers = ['scroll', 'resize']
@@ -63,6 +63,10 @@ const MugenScroll = {
   beforeDestroy() {
     triggers.forEach(event => this._scrollContainer.removeEventListener(event, this.check))
   }
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  Vue.component(MugenScroll.name, MugenScroll)
 }
 
 export default MugenScroll

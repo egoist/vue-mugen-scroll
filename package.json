@@ -45,7 +45,9 @@
     "space": 2,
     "semicolon": false,
     "esnext": true,
-    "envs": ["browser"]
+    "envs": [
+      "browser"
+    ]
   },
   "jest": {
     "testEnvironment": "node"
@@ -54,6 +56,6 @@
     "extends": "egoist/esnext-browser"
   },
   "dependencies": {
-    "lodash.throttle": "^4.1.1"
+    "throttleit": "^1.0.0"
   }
 }
