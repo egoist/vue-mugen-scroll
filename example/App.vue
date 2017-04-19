@@ -11,6 +11,7 @@
         </div>
       </div>
       <mugen-scroll
+        class="you-can-add-custom-class-name"
         :handler="fetchUsers"
         :should-handle="!loading"
         scroll-container="scrollContainer">

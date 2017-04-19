@@ -1,6 +1,6 @@
 module.exports = {
   entry: './example/index.js',
-  dist: 'dist-example',
+  dist: './example/dist',
   port: 4050,
   html: {
     title: 'Vue MugenScroll'
