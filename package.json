@@ -35,6 +35,7 @@
   "devDependencies": {
     "axios": "^0.16.1",
     "bili": "^0.14.1",
+    "eslint-config-rem": "^3.0.1",
     "gh-pages": "^0.12.0",
     "jest-cli": "^19.0.2",
     "postcss-nested": "^1.0.1",
@@ -43,9 +44,7 @@
     "xo": "^0.18.1"
   },
   "xo": {
-    "space": 2,
-    "semicolon": false,
-    "esnext": true,
+    "extends": "rem",
     "envs": [
       "browser"
     ]
