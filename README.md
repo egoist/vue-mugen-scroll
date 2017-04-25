@@ -79,7 +79,7 @@ Default: `0`
 
 Set the ratio of the `<mugen-scroll>`'s height and width that needs to be visible for it to be considered in viewport. This defaults to 0, meaning any amount. A threshold of 0.5 or 1 will require that half or all, respectively, of the element's height and width need to be visible. threshold must be a number between 0 and 1
 
-#### scrollConatiner
+#### scrollContainer
 
 Type: `string`
 
