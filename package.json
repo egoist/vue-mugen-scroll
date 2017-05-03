@@ -15,8 +15,8 @@
   "homepage": "https://egoistian.com/vue-mugen-scroll/",
   "scripts": {
     "test": "xo src/*.js && npm run build",
-    "example": "vbuild dev",
-    "example:build": "vbuild",
+    "example": "poi",
+    "example:build": "poi build",
     "gh": "npm run example:build && gh-pages -d example/dist",
     "build": "bili --format umd --format cjs --module-name MugenScroll --compress"
   },
@@ -38,9 +38,9 @@
     "eslint-config-rem": "^3.0.1",
     "gh-pages": "^0.12.0",
     "jest-cli": "^19.0.2",
+    "poi": "^8.0.0-rc.4",
     "postcss-nested": "^1.0.1",
     "text-spinners": "^1.0.5",
-    "vbuild": "^7.0.7",
     "xo": "^0.18.1"
   },
   "xo": {
