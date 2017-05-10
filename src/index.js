@@ -60,7 +60,6 @@ const MugenScroll = {
     }
   },
   render(h) {
-    console.log(this)
     return h('div', {
       staticClass: 'mugen-scroll',
       ref: 'scroll'
