@@ -45,9 +45,14 @@ const MugenScroll = {
         execute()
       }
 
-      this._scrollContainer = this.scrollContainer ?
-        this.$parent.$refs[this.scrollContainer] :
-        window
+      if (this.scrollContainer) {
+        let parent = this
+        while ((parent = parent.$parent) && !this._scrollContainer) {
+          this._scrollContainer = parent.$refs[this.scrollContainer]
+        }
+      }
+
+      this._scrollContainer = this._scrollContainer || window
 
       // add event listeners
       this.check = throttle(execute, 200)
