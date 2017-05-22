@@ -50,6 +50,7 @@ const MugenScroll = {
         while ((parent = parent.$parent) && !this._scrollContainer) {
           this._scrollContainer = parent.$refs[this.scrollContainer]
         }
+        // Ensure it's html element (ref could be component)
         if (this._scrollContainer && this._scrollContainer.$el) {
           this._scrollContainer = this._scrollContainer.$el
         }
@@ -57,7 +58,7 @@ const MugenScroll = {
 
       this._scrollContainer = this._scrollContainer || window
 
-      // add event listeners
+      // Add event listeners
       this.check = throttle(execute, 200)
       triggers.forEach(event => this._scrollContainer.addEventListener(event, this.check))
     }
