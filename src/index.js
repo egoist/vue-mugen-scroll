@@ -55,7 +55,7 @@ const MugenScroll = {
       if (this._scrollContainer) {
         this._scrollContainer = this._scrollContainer.nodeType
           ? this._scrollContainer
-          : this._scrollContainer.el
+          : this._scrollContainer.$el
       } else {
         this._scrollContainer = window
       }
