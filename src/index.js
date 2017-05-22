@@ -50,15 +50,12 @@ const MugenScroll = {
         while ((parent = parent.$parent) && !this._scrollContainer) {
           this._scrollContainer = parent.$refs[this.scrollContainer]
         }
+        if (this._scrollContainer && this._scrollContainer.$el) {
+          this._scrollContainer = this._scrollContainer.$el
+        }
       }
 
-      if (this._scrollContainer) {
-        this._scrollContainer = this._scrollContainer.nodeType
-          ? this._scrollContainer
-          : this._scrollContainer.$el
-      } else {
-        this._scrollContainer = window
-      }
+      this._scrollContainer = this._scrollContainer || window
 
       // add event listeners
       this.check = throttle(execute, 200)
