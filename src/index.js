@@ -1,5 +1,5 @@
 import throttle from 'throttleit'
-import inViewport from './in-viewport'
+import inViewport from 'element-in-view'
 
 const triggers = ['scroll', 'resize']
 
