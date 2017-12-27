@@ -36,7 +36,9 @@ const MugenScroll = {
           threshold: this.threshold
         })
         if (this.shouldHandle && inView) {
-          this.handler()
+          this.handler().then(() => {
+            execute();
+          });
         }
       }
 
