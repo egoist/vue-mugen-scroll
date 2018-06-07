@@ -2,6 +2,9 @@
 
 **むげん [mugen]** means Infinity in English.
 
+## Example
+- [JSFiddle Demo](https://jsfiddle.net/jericopulvera/wq07brjs/14/)
+
 ## Features
 
 - Small, only weighs 2kb
