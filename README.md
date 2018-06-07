@@ -15,6 +15,8 @@ $ npm install --save vue-mugen-scroll
 
 CDN: https://unpkg.com/vue-mugen-scroll/dist/
 
+Demo: [JSFiddle](https://jsfiddle.net/jericopulvera/wq07brjs/17/)
+
 ## Usage
 
 ```vue
