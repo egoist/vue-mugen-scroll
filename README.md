@@ -3,7 +3,7 @@
 **むげん [mugen]** means Infinity in English.
 
 ## Example
-- [JSFiddle Demo](https://jsfiddle.net/jericopulvera/wq07brjs/16/)
+- [JSFiddle Demo](https://jsfiddle.net/jericopulvera/wq07brjs/17/)
 
 ## Features
 
