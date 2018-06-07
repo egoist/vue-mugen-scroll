@@ -2,9 +2,6 @@
 
 **むげん [mugen]** means Infinity in English.
 
-## Example
-- [JSFiddle Demo](https://jsfiddle.net/jericopulvera/wq07brjs/17/)
-
 ## Features
 
 - Small, only weighs 2kb
@@ -17,6 +14,8 @@ $ npm install --save vue-mugen-scroll
 ```
 
 CDN: https://unpkg.com/vue-mugen-scroll/dist/
+
+Demo: [JSFiddle](https://jsfiddle.net/jericopulvera/wq07brjs/17/)
 
 ## Usage
 
