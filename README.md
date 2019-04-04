@@ -72,7 +72,7 @@ Invoke the handler function on component mounted.
 Type: `boolean`<br>
 Default: `true`
 
-Add an addtional condition to check if it should invoke the handler function, for example you don't want it to be invoked again as it's loading.
+Add an additional condition to check if it should invoke the handler function, for example you don't want it to be invoked again as it's loading.
 
 #### threshold
 
