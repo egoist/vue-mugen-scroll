@@ -74,6 +74,24 @@ Default: `true`
 
 Add an additional condition to check if it should invoke the handler function, for example you don't want it to be invoked again as it's loading.
 
+#### offset
+
+Type: `Number` `object`<br>
+Default: `0`
+
+By default, the `<mugen-scroll>`' is considered in viewport if it breaks any edge of the viewport. This can be used to set an offset from that edge. For example, an offset of `100` will consider the element in viewport if it breaks any edge of the viewport by at least `100` pixels. offset can be a positive or negative integer.
+
+Offset can also be set per-direction by passing an object.
+
+```js
+{
+  top: 100,
+  right: 75,
+  bottom: 50,
+  left: 25
+}
+```
+
 #### threshold
 
 Type: `number`<br>

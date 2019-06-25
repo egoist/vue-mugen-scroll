@@ -14,6 +14,10 @@ const MugenScroll = {
       type: Boolean,
       default: true
     },
+    offset: {
+      type: [Number, Object],
+      default: 0
+    },
     threshold: {
       type: Number,
       default: 0
@@ -38,6 +42,7 @@ const MugenScroll = {
         }
 
         const inView = inViewport(this.$refs.scroll, {
+          offset: this.offset,
           threshold: this.threshold
         })
         if (this.shouldHandle && inView) {
