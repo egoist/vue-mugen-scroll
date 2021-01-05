@@ -34,7 +34,7 @@
   ],
   "devDependencies": {
     "aimer": "^2.0.8",
-    "axios": "^0.16.1",
+    "axios": "^0.21.1",
     "bili": "^0.15.3",
     "eslint-config-rem": "^3.1.0",
     "gh-pages": "^1.0.0",
